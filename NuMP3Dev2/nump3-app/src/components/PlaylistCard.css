@@ -1,0 +1,22 @@
+/* .playlist-card {
+  border: 2px solid #7dd3fc;
+  padding: 1rem;
+  text-align: center;
+  background: #0b1220;
+}
+
+.playlist-image {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+} */
+
+.playlist-card {
+  background: linear-gradient(180deg, #1c1c3c, #0f0f22);
+  border: 2px solid var(--border);
+  box-shadow: 0 0 14px var(--glow);
+}
+
+.playlist-image {
+  color: var(--purple);
+  filter: drop-shadow(0 0 6px var(--glow));
+}
