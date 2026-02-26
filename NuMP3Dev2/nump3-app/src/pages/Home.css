@@ -1,0 +1,94 @@
+.home-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  height: calc(100vh - 90px); /* leave space for player later */
+}
+
+.home-main {
+  padding: 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0b1220;
+  /* border: 2px solid #7dd3fc; */
+  border: 2px solid var(--purple);
+  color: white;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.greeting {
+  margin: 2rem 0;
+  border: 2px solid var(--purple);
+  padding: 1.5rem;
+}
+
+.greeting h2 {
+  /* color: #7dd3fc; */
+  color: var(--purple-soft);
+  text-shadow: 0 0 8px var(--glow);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header button {
+  background: transparent;
+  border: 1px solid var(--purple);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-family: 'Pixelify Sans', monospace;
+}
+
+.playlist-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* === Player Controls Bar (matches your UI) === */
+.player-controls {
+  margin: 1.25rem 0;
+  border: 2px solid var(--purple);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Make control buttons match your "VIEW ALL" style */
+.player-controls .ui-btn {
+  background: transparent;
+  border: 1px solid var(--purple);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-family: 'Pixelify Sans', monospace;
+  cursor: pointer;
+}
+
+.player-controls .ui-btn:hover:not(:disabled) {
+  box-shadow: 0 0 8px var(--glow);
+  border-color: var(--purple-soft);
+}
+
+.player-controls .ui-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Now playing text on the right */
+.player-status {
+  margin-left: auto;
+  color: white;
+  opacity: 0.85;
+  font-family: 'Pixelify Sans', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 45%;
+}
