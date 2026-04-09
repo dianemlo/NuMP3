@@ -32,4 +32,12 @@ build/
 
 # Misc
 *.zip
+
 *.7z
+
+*.7z
+
+node_modules/
+dist/
+dist-ssr/
+
