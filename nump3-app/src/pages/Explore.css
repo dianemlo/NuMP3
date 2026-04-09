@@ -1,0 +1,93 @@
+.explore-page {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.explore-title {
+  margin-bottom: 2.5rem;
+}
+
+/* OVERLAPPING ROW */
+.overlap-row {
+  position: relative;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD BASE */
+.overlap-card {
+  position: absolute;
+  width: 240px;
+  min-height: 360px;
+  padding: 1.25rem;
+
+  background: linear-gradient(180deg, #1c1c3c, #0f0f22);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    opacity 0.35s ease;
+
+  box-shadow: 0 0 12px var(--glow);
+  cursor: pointer;
+}
+
+/* ACTIVE CARD */
+.overlap-card.active {
+  box-shadow: 0 0 26px var(--glow);
+}
+
+/* IMAGE */
+.overlap-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+}
+
+/* TEXT */
+.overlap-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.overlap-card .bio {
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* GENRES */
+.genres {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.genres span {
+  font-size: 0.65rem;
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.45rem;
+}
+
+.mini-albums {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.mini-album {
+  font-size: 0.65rem;
+  padding: 0.4rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #1c1c3c, #0f0f22);
+  box-shadow: 0 0 6px var(--glow);
+  border-radius: 6px;
+}
