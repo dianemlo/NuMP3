@@ -1,0 +1,235 @@
+/* .profile-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+} */
+
+.welcome-back-text {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.profile-username-highlight {
+  font-size: 1.35em;
+  color: #ffffff;
+  text-shadow:
+    0 0 6px #ffffff,
+    0 0 12px #b8a8ff,
+    0 0 20px #b8a8ff;
+  letter-spacing: 2px;
+}
+
+.profile-picture-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.upload-pfp-btn,
+.save-pfp-btn {
+  border: 1px solid #b8a8ff;
+  background: transparent;
+  color: white;
+  padding: 8px 14px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.upload-pfp-btn:hover,
+.save-pfp-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.save-pfp-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.profile-message {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(320px, 700px);
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center; /* centers the whole layout */
+}
+
+/* LEFT SIDE */
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.profile-email {
+  margin: 6px 0 10px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.profile-card,
+.recently-added {
+  max-width: 320px;
+}
+
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 12px var(--glow);
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.username {
+  margin-top: 1rem;
+  color: var(--purple-soft);
+}
+
+.bio {
+  font-size: 0.85rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+/* RECENTLY ADDED */
+.recently-added {
+  padding: 1rem;
+}
+
+.recent-list {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+}
+
+.recent-item {
+  font-size: 0.8rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.profile-right {
+  padding: 1.5rem;
+  align-self: start; /* stops it from stretching */
+}
+
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 1rem;
+}
+
+
+.album-card {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 10px var(--glow);
+  background: linear-gradient(180deg, #1c1c3c, #0f0f22);
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: var(--purple-soft);
+
+  border: 1px solid var(--border);
+  box-shadow: 0 0 8px var(--glow);
+}
+
+.explore-link:hover {
+  box-shadow: 0 0 14px var(--glow);
+}
+
+/* Top row inside Albums panel */
+.albums-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+/* Create Playlist link */
+.create-playlist-link {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: var(--purple-soft);
+  /* text-shadow: var(--glow) 0px 0px 4px; */
+}
+
+.create-playlist-link:hover {
+  /* box-shadow: 0 0 14px var(--glow); */
+  text-shadow: var(--glow) 0px 0px 6px;
+}
+
+
+.bio-editor {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.bio-textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: white;
+  font: inherit;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.bio-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-bio-btn,
+.save-bio-btn,
+.cancel-bio-btn {
+  border: 1px solid #b8a8ff;
+  background: transparent;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.edit-bio-btn:hover,
+.save-bio-btn:hover,
+.cancel-bio-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
