@@ -10,9 +10,9 @@ import {
 } from "../lib/playlistApi";
 import { usePlayer } from "../player/PlayerContext";
 import { getSavedAlbums, removeSavedAlbum } from "../lib/localAlbums";
-import vinylImg from "../assets/vinyl.png";
-import cassetteImg from "../assets/cassette.png";
-import cdImg from "../assets/cd.png";
+import vinylImg from "../assets/vinyl.jpg";
+import cassetteImg from "../assets/cassette.webp";
+import cdImg from "../assets/cd.webp";
 import "./Profile.css";
 
 

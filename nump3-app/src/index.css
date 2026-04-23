@@ -103,7 +103,8 @@ button:focus-visible {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #1a1a3a, #0b0b1a 70%);
+  /* background: radial-gradient(circle at top, #1a1a3a, #0b0b1a 70%); */
+  background: black;
   color: white;
   font-family: 'Pixelify Sans', monospace;
 }
