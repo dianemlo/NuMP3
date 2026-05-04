@@ -11,3 +11,7 @@ Creating a social media-like music desktop application.
 - listen to songs and add songs to playlists
 - create/generate playlists based off of genre/decade
 - explore other people's profiles with dating app-like features
+
+
+# Video Link
+- https://drive.google.com/drive/folders/1cq-UCHU5paOJEsrnjzK_fXZcdvmL37sD?usp=sharing
