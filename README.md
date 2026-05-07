@@ -12,6 +12,12 @@ Creating a social media-like music desktop application.
 - create/generate playlists based off of genre/decade
 - explore other people's profiles with dating app-like features
 
+# How to run NuMP3
+1. Open two VS Code terminals
+2. In terminal 1: cd nump3-app, then npm install
+3. In terminal 2: cd server_merged, then cd merged, then npm install
+4. In terminal 2: node server.js
+5. In terminal 1: npm run dev, then navigate/click on the localhost link provided
 
 # Video Link
 - https://drive.google.com/drive/folders/1cq-UCHU5paOJEsrnjzK_fXZcdvmL37sD?usp=sharing
