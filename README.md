@@ -14,8 +14,8 @@ Creating a social media-like music desktop application.
 
 # How to run NuMP3
 1. Open two VS Code terminals
-2. In terminal 1: cd nump3-app, then npm install
-3. In terminal 2: cd server_merged, then cd merged, then npm install
+2. In terminal 1: cd nump3-app, then npm install dependencies
+3. In terminal 2: cd server_merged/merged/, then npm install dependencies
 4. In terminal 2: node server.js
 5. In terminal 1: npm run dev, then navigate/click on the localhost link provided
 
